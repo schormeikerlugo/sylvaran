@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sylvaran</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles/menu.css" />
+  </head>
+
+  <body>
+    <!-- 🎮 Contenedor principal del juego -->
+    <div id="game-container"></div>
+
+    <!-- 🧩 UI general del menú -->
+    <div id="ui-container">
+      
+      <!-- ⌨️ Pantalla inicial para continuar -->
+      <div id="continue-screen" class="scene-ui hidden">
+        <div class="prompt">🪄 Presiona cualquier tecla e inicia tu aventura</div>
+      </div>
+
+      <!-- 🧭 Menú principal -->
+      <div id="menu-ui" class="scene-ui hidden">
+        <div id="logo">SYLVARAN</div>
+        <ul class="menu-options">
+          <li data-action="new">New Game</li>
+          <li data-action="tips">Tips and Tricks</li>
+          <li data-action="credits">Credits</li>
+          <li data-action="quit">Quit</li>
+        </ul>
+      </div>
+
+      <!-- 💡 Modal: Tips and Tricks -->
+      <div id="modal-tips" class="modal hidden">
+        <div class="modal-content">
+          <h2>🧠 Tips and Tricks</h2>
+          <p>• Explora cada rincón del bosque.  
+             <br>• Habla con los NPCs para desbloquear secretos.  
+             <br>• ¡No subestimes a los enemigos débiles!</p>
+          <button id="close-tips">Cerrar</button>
+        </div>
+      </div>
+
+      <!-- 🎖️ Modal: Créditos -->
+      <div id="modal-credits" class="modal hidden">
+        <div class="modal-content">
+          <img src="assets/images/schormeiker.png" alt="" class="schormeiker">
+          <h2>🎨 Créditos</h2>
+          <p>
+            Proyecto creado por <strong>Schormeiker</strong><br />
+            UI, arte y dirección creativa<br />
+            Phaser + amor por los píxeles
+          </p>
+          <button id="close-credits">Cerrar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🧪 Script principal del juego -->
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

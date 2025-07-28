@@ -27,13 +27,13 @@ export default class OverworldScene extends BaseMapScene {
       'Grass_animation',
       'piso externo',
       'piso_interno',
-      'Plant',
+      'bush',
       'Struct1',
       'Struct',
-      'shadow',
-      'bush',
+      'shadow',      
       'signal',
-      'objetos'
+      'objetos',
+      'Plant'
     ];
   }
 
